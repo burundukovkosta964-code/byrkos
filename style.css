@@ -348,5 +348,19 @@ footer {
     .value-card { padding: 25px; }
     .social-btn { width: 100%; text-align: center; }
 }
+/* ==========================================================================
+   7. СТИЛИ ДЛЯ АНИМАЦИИ ПРИ СКРОЛЛЕ
+   ========================================================================== */
+.fade-in {
+    opacity: 0;
+    transform: translateY(40px); /* Элемент изначально смещен вниз */
+    transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1), transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+    will-change: opacity, transform;
+}
 
+/* Этот класс будет автоматически добавляться через JavaScript, когда блок доскроллят */
+.fade-in.appear {
+    opacity: 1;
+    transform: translateY(0); /* Элемент плавно встает на свое место */
+}
 
