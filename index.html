@@ -1,143 +1,167 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="RU">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BYRKOS DESIGN AGENCY</title>
-    <!-- Подключаем файл со стилями -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Шапка сайта -->
+    <!-- НАВИГАЦИЯ -->
     <header>
         <a href="#" class="logo">BYRKOS</a>
         <nav>
-            <a href="#about" class="nav-link">О нас</a>
-            <a href="#services" class="nav-link">Услуги</a>
-            <a href="https://vk.ru" target="_blank" class="nav-link">Портфолио</a>
-            <a href="#contacts" class="nav-link">Контакты</a>
+            <a href="#about">О НАС</a>
+            <a href="#stats">ЦЕННОСТИ</a>
+            <a href="#services">УСЛУГИ</a>
+            <a href="https://vk.ru" target="_blank">ПОРТФОЛИО</a>
+            <a href="#contacts">КОНТАКТЫ</a>
         </nav>
+        <a href="#contacts" class="header-btn">ЗАКАЗАТЬ ДИЗАЙН</a>
     </header>
 
-    <!-- Главный экран -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1 class="main-title">BYRKOS<br>DESIGN AGENCY</h1>
-            <p class="hero-subtitle">Объединяем тех, кто живет дизайном</p>
-            <a href="#contacts" class="hero-btn">Связаться</a>
+    <!-- СЛАЙД 1: ГЛАВНЫЙ ЭКРАН -->
+    <section class="hero-section">
+        <div class="hero-container">
+            <img src="hero-title.png" alt="ВРЕМЯ ЦИФРОВОГО БУДУЩЕГО" class="hero-title-img animate-fade">
+            <div class="badge-wrapper animate-fade">
+                <img src="white-badge.png" alt="ПЛАШКА" class="badge-img-file">
+                <span class="badge-text">СОЗДАЕМ ДИЗАЙН, КОТОРЫЙ ОСТАВЛЯЕТ СЛЕД В ЦИФРОВОЙ ИСТОРИИ</span>
+            </div>
         </div>
     </section>
 
-    <!-- Секция "О нас" -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <!-- Добавили класс fade-in для плавного появления заголовка -->
-            <h2 class="section-title fade-in">О нас</h2>
-            
-            <div class="about-manifesto fade-in">
-                <p>Мы — <strong>BYRKOS DESIGN AGENCY</strong>. Объединяем тех, кто живет дизайном и создает цифровое будущее.</p>
-                <p>Наша команда — это точка притяжения для сильнейших специалистов во всех направлениях: от UI/UX интерфейсов и масштабного брендинга до концептуальной иллюстрации и сложного моушен-дизайна.</p>
-                <p>Мы создаем визуальные решения, которые помогают брендам заявлять о себе, находить общий язык с аудиторией и расти в бизнесе. Для нас не существует «очередных проектов» — каждая заказанная работа становится настоящим искусством, в которое мы вкладываем душу, сердце и весь наш опыт. Мы задаем новый уровень в индустрии.</p>
+    <!-- СЛАЙД 2: О НАС -->
+    <section id="about" class="about-section text-animate">
+        <div class="about-container">
+            <div class="about-text-block">
+                <h2 class="plateia-font text-glow">О НАС</h2>
+                <div class="manifesto-text">
+                    <p>МЫ — <strong>BYRKOS DESIGN AGENCY</strong>. ОБЪЕДИНЯЕМ ТЕХ, КТО ЖИВЕТ ДИЗАЙНОМ И СОЗДАЕТ ЦИФРОВОЕ БУДУЩЕЕ.</p>
+                    <p>НАША КОМАНДА — ЭТО ТОЧКА ПРИТЯЖЕНИЯ ДЛЯ СИЛЬНЕЙШИХ СПЕЦИАЛИСТОВ ВО ВСЕХ НАПРАВЛЕНИЯХ: ОТ UI/UX ИНТЕРФЕЙСОВ И МАСШТАБНОГО БРЕНДИНГА ДО КОНЦЕПТУАЛЬНОЙ ИЛЛЮСТРАЦИИ И СЛОЖНОГО МОУШЕН-ДИЗАЙНА.</p>
+                    <p>МЫ СОЗДАЕМ ВИЗУАЛЬНЫЕ РЕШЕНИЯ, КОТОРЫЕ ПОМОГАЮТ БРЕНДАМ ЗАЯВЛЯТЬ О СЕБЕ, НАХОДИТЬ ОБЩИЙ ЯЗЫК С АУДИТОРИЕЙ И РАСТИ В БИЗНЕСЕ. ДЛЯ НАС НЕ СУЩЕСТВУЕТ «ОЧЕРЕДНЫХ ПРОЕКТОВ» — КАЖДАЯ ЗАКАЗАННАЯ РАБОТА СТАНОВИТСЯ НАСТОЯЩИМ ИСКУССТВОМ, В КОТОРОЕ МЫ ВКЛАДЫВАЕМ ДУШУ, СЕРДЦЕ И ВЕСЬ НАШ ОПЫТ. МЫ ЗАДАЕМ НОВЫЙ УРОВЕНЬ В ИНДУСТРИИ.</p>
+                </div>
+                <h3 class="plateia-font author-name text-glow">БУРУНДУКОВ КОНСТАНТИН</h3>
             </div>
+            <div class="about-image-block">
+                <img src="about-photo.png" alt="КОНСТАНТИН" class="parallax-photo">
+            </div>
+        </div>
+    </section>
 
-            <h3 class="sub-title fade-in">Наши ценности</h3>
+    <!-- СЛАЙД 3: ЦЕННОСТИ И ЦИФРЫ -->
+    <section id="stats" class="stats-section text-animate">
+        <div class="global-container">
+            <h2 class="plateia-font slide-title">НАШИ ЦЕННОСТИ</h2>
             <div class="values-grid">
-                <!-- Каждая карточка будет появляться отдельно -->
-                <div class="value-card fade-in">
-                    <h4>Взаимопомощь</h4>
-                    <p>Критика, которая помогает стать лучше, а не демотивирует.</p>
+                <div class="value-card">
+                    <h4 class="plateia-font">ВЗАИМОПОМОЩЬ</h4>
+                    <p>КРИТИКА, КОТОРАЯ ПОМОГАЕТ СТАТЬ ЛУЧШЕ, А НЕ ДЕМОТИВИРУЕТ.</p>
                 </div>
-                <div class="value-card fade-in">
-                    <h4>Открытость</h4>
-                    <p>Мы рады и опытным арт-директорам, и тем, кто только делает первые шаги.</p>
+                <div class="value-card">
+                    <h4 class="plateia-font">ОТКРЫТОСТЬ</h4>
+                    <p>МЫ РАДЫ И ОПЫТНЫМ АРТ-ДИРЕКТОРАМ, И ТЕМ, КТО ТОЛЬКО ДЕЛАЕТ ПЕРВЫЕ ШАГИ.</p>
                 </div>
-                <div class="value-card fade-in">
-                    <h4>Качество</h4>
-                    <p>Стремление к высокому уровню работ и наш опыт. Каждая заказанная работа — это не просто «очередной проект», это настоящее искусство для нас. Каждую работу мы делаем с душой и сердцем. Стараемся показывать настоящий «уровень» дизайна!</p>
+                <div class="value-card">
+                    <h4 class="plateia-font">КАЧЕСТВО</h4>
+                    <p>СТРЕМЛЕНИЕ К ВЫСОКОМУ УРОВЕНЮ РАБОТ И НАШ ОПЫТ. КАЖДАЯ ЗАКАЗАННАЯ РАБОТА — ЭТО НЕ ПРОСТО «ОЧЕРЕДНОЙ ПРОЕКТ», ЭТО НАСТОЯЩЕЕ ИСКУССТВО ДЛЯ НАС. КАЖДУЮ РАБОТУ МЫ ДЕЛАЕМ С ДУШОЙ И СЕРДЦЕМ. СТАРАЕМСЯ ПОКАЗЫВАТЬ НАСТОЯЩИЙ «УРОВЕНЬ» ДИЗАЙНА!</p>
                 </div>
             </div>
 
-            <h3 class="sub-title fade-in">Сообщество в цифрах</h3>
-            <div class="stats-grid">
-                <div class="stat-item fade-in">
-                    <span class="stat-number">300+</span>
-                    <span class="stat-label">активных подписчиков</span>
+            <h2 class="plateia-font slide-title" style="margin-top: 100px;">СООБЩЕСТВО В ЦИФРАХ</h2>
+            <div class="counters-grid">
+                <div class="counter-item">
+                    <span class="counter-num plateia-font" data-target="300">+300</span>
+                    <p class="counter-label">АКТИВНЫХ ПОДПИСЧИКОВ</p>
                 </div>
-                <div class="stat-item fade-in">
-                    <span class="stat-number">150+</span>
-                    <span class="stat-label">работ на заказ</span>
+                <div class="counter-item">
+                    <span class="counter-num plateia-font" data-target="150">+150</span>
+                    <p class="counter-label">РАБОТ НА ЗАКАЗ</p>
                 </div>
-                <div class="stat-item fade-in">
-                    <span class="stat-number">300+</span>
-                    <span class="stat-label">кейсов в портфолио</span>
-                </div>
-                <div class="stat-item fade-in">
-                    <span class="stat-number">2 года</span>
-                    <span class="stat-label">в индустрии цифровых решений</span>
-                </div>
-                <div class="stat-item fade-in">
-                    <span class="stat-number">98%</span>
-                    <span class="stat-label">довольных клиентов и заказчиков</span>
-                </div>
-                <div class="stat-item fade-in">
-                    <span class="stat-number">24/7</span>
-                    <span class="stat-label">поток свежего вдохновения и фидбека</span>
+                <div class="counter-item">
+                    <span class="counter-num plateia-font" data-target="2">2</span>
+                    <p class="counter-label">ГОДА В ИНДУСТРИИ ЦИФРОВЫХ РЕШЕНИЙ</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Секция Услуг -->
-    <section id="services" class="services-section">
-        <div class="container">
-            <h2 class="section-title fade-in">Что мы делаем</h2>
+    <!-- СЛАЙД 4: ЧТО МЫ ДЕЛАЕМ -->
+    <section id="services" class="services-section text-animate">
+        <div class="global-container">
+            <h2 class="plateia-font slide-title">ЧТО МЫ ДЕЛАЕМ</h2>
             <div class="services-grid">
-                <div class="service-card fade-in">
-                    <div class="service-num">01</div>
-                    <h3>UI/UX Дизайн</h3>
-                    <p>Проектирование интерфейсов, мобильных приложений и адаптивных сайтов любой сложности.</p>
+                <div class="service-card">
+                    <span class="service-num plateia-font">01</span>
+                    <h3 class="plateia-font">UI/UX ДИЗАЙН</h3>
+                    <p>ПРОЕКТИРОВАНИЕ ИНТЕРФЕЙСОВ, МОБИЛЬНЫХ ПРИЛОЖЕНИЙ И АДАПТИВНЫХ САЙТОВ ЛЮБОЙ СЛОЖНОСТИ.</p>
                 </div>
-                <div class="service-card fade-in">
-                    <div class="service-num">02</div>
-                    <h3>Брендинг и Айдентика</h3>
-                    <p>Разработка фирменного стиля, логотипов, подбор шрифтов и создание уникального лица бренда.</p>
+                <div class="service-card">
+                    <span class="service-num plateia-font">02</span>
+                    <h3 class="plateia-font">БРЕНДИНГ И АЙДЕНТИКА</h3>
+                    <p>РАЗРАБОТКА ФИРМЕННОГО СТИЛЯ, ЛОГОТИПОВ, ПОДБОР ШРИФТОВ И СОЗДАНИЕ УНИКАЛЬНОГО ЛИЦА БРЕНДА.</p>
                 </div>
-                <div class="service-card fade-in">
-                    <div class="service-num">03</div>
-                    <h3>Иллюстрации</h3>
-                    <p>Создание концептуального графического контента, коммерческая и персональная иллюстрация.</p>
+                <div class="service-card">
+                    <span class="service-num plateia-font">03</span>
+                    <h3 class="plateia-font">ГРАФИЧЕСКИЙ ДИЗАЙН</h3>
+                    <p>РАЗРАБОТКА СИЛЬНОГО ВИЗУАЛЬНОГО КОНТЕНТА, КОТОРЫЙ ЗАСТАВЛЯЕТ БРЕНДЫ ГОВОРИТЬ ГРОМКО И ВЫДЕЛЯТЬСЯ СРЕДИ КОНКУРЕНТОВ.</p>
                 </div>
-                <div class="service-card fade-in">
-                    <div class="service-num">04</div>
-                    <h3>Motion Design</h3>
-                    <p>Анимация интерфейсов, промо-ролики, создание эффектов и оживление статичной графики.</p>
+                <div class="service-card">
+                    <span class="service-num plateia-font">04</span>
+                    <h3 class="plateia-font">ВЕБ-РАЗРАБОТКА</h3>
+                    <p>СОЗДАНИЕ СТАБИЛЬНОГО И БЫСТРОГО ПРОГРАММНОГО КОДА ДЛЯ САЙТОВ, ПОСАДОЧНЫХ СТРАНИЦ И СЕРВИСОВ ПОД КЛЮ.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-num plateia-font">05</span>
+                    <h3 class="plateia-font">MOTION DESIGN</h3>
+                    <p>АНИМАЦИЯ ИНТЕРФЕЙСОВ, ПРОМО-РОЛИКИ, СОЗДАНИЕ ЭФФЕКТОВ И ОЖИВЛЕНИЕ СТАТИЧНОЙ ГРАФИКИ.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-num plateia-font">06</span>
+                    <h3 class="plateia-font">ТАРГЕТ И РЕКЛАМА</h3>
+                    <p>НАСТРОЙКА ЭФФЕКТИВНОГО ПРОДВИЖЕНИЯ, ПРИВЛЕЧЕНИЕ ЦЕЛЕВОЙ АУДИТОРИИ И МАСШТАБИРОВАНИЕ ВАШЕГО БИЗНЕСА.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Секция "Контакты" -->
-    <section id="contacts" class="contacts-section">
-        <div class="container">
-            <h2 class="section-title fade-in">Контакты</h2>
-            <p class="contacts-subtitle fade-in">Присоединяйтесь к нашему сообществу или закажите проект</p>
+    <!-- СЛАЙД 5: КОНТАКТЫ -->
+    <section id="contacts" class="contacts-section text-animate">
+        <div class="contacts-container">
+            <div class="contacts-left">
+                <h2 class="plateia-font contacts-title-glow">КОНТАКТЫ</h2>
+                
+                <div class="qr-row">
+                    <img src="qr-max.png" alt="QR МАКС" class="qr-img">
+                    <a href="https://vk.com" target="_blank" class="plateia-font link-item">МАКС</a>
+                </div>
+                
+                <div class="qr-row">
+                    <img src="qr-vk.png" alt="QR ВК" class="qr-img">
+                    <a href="https://vk.com" target="_blank" class="plateia-font link-item">ВК</a>
+                </div>
+                
+                <div class="qr-row">
+                    <img src="qr-tg.png" alt="QR ТГ" class="qr-img">
+                    <a href="https://t.me" target="_blank" class="plateia-font link-item">ТГК</a>
+                </div>
+            </div>
             
-            <div class="social-links fade-in">
-                <a href="https://vk.com" target="_blank" class="social-btn">ВКонтакте</a>
-                <a href="https://t.me" target="_blank" class="social-btn">Телеграм</a>
-                <a href="https://vk.com" target="_blank" class="social-btn">МАКС</a>
+            <div class="contacts-right">
+                <img src="social-icons.png" alt="СОЦСЕТИ" class="floating-icons" id="js-parallax-icons">
             </div>
         </div>
     </section>
 
-    <!-- Подвал -->
+    <!-- ПОДВАЛ -->
     <footer>
-        <p>&copy; 2026 BYRKOS DESIGN AGENCY. Все права защищены.</p>
+        <p class="plateia-font">&copy; 2026 BYRKOS DESIGN AGENCY. ВСЕ ПРАВА ЗАЩИЩЕНЫ.</p>
     </footer>
 
-    <!-- Подключаем логику анимации -->
     <script src="script.js"></script>
 </body>
 </html>
+
+
 
